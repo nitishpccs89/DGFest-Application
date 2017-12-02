@@ -4,8 +4,10 @@
                     </button>
         </ion-nav-buttons>
         <ion-nav-buttons side="right">
-                <button style="color:#fff;"class="button button-icon button-clear ion-home">
-                        </button>
+                <a href="#/home" menu-close>
+                    <button style="color:#fff;"class="button button-icon button-clear ion-home">
+                    </button>
+                </a>
             </ion-nav-buttons>
         <!--<ion-nav-buttons side="right">
             <a href="#/menuHeader/newswire" menu-close>
@@ -13,8 +15,8 @@
             </button>
             </a>
         </ion-nav-buttons>-->
-        <ion-content scroll="true" style="background: #ddd;">
-                <div class="list card" style="margin:5px;">
+        <ion-content scroll="true" style="background: #ccc;bottom:5%;">
+                <!-- <div class="list card" style="margin:5px;">
                 
                   <div class="item item-avatar" style="padding-left:2%;">
                     <h2 class="cardHeading">City Palace Hotel</h2>
@@ -32,29 +34,59 @@
                       
                 </div>
                 
-                </div>
+                </div> -->
     
                 <div class="list card" style="margin:5px;">
                         
                           <div class="item item-avatar" style="padding-left:2%;">
                             <h2 class="cardHeading">City Palace Hotel</h2>
-                            <span class="cardDesc">City Palace, Jaipur, which includes the Chandra Mahal and Mubarak Mahal palaces and other buildings, is a palace complex in Jaipur, the capital of the Rajasthan state, India.</span>
-                            <p class="cardStar">&#9733;2/5</p>
+                            <!--<span class="cardDesc">City Palace, Jaipur, which includes the Chandra Mahal and Mubarak Mahal palaces and other buildings, is a palace complex in Jaipur, the capital of the Rajasthan state, India.</span>-->
+                            <!--<p class="cardStar">&#9733;2/5</p>-->
                           </div>
-                        
-                          <div class="item item-image">
-                            <img src="../../img/cityCard.jpg">
-                          </div>
-                        
-                          <div class="row">
-                                <button class="button button-clear col col-50 footerColor padding0" style="background:#0072ff;border-right:2px solid #fff;">Details</button>
-                                <button class="button button-clear col col-50 footerColor padding0" style="background:#0072ff;border-right:5px solid #fff;">View On Map</button>
-                              
-                        </div>
-                        
+                          <div class="item item-body">
+                            <img class="full-image" src="../../img/cityCard.jpg">
+                            <p>
+                              City Palace, Jaipur, which includes the Chandra Mahal and Mubarak Mahal palaces and other buildings, is a palace complex in Jaipur, the capital of the Rajasthan state, India.
+                            </p>
+                            <p>
+                              <a href="#" class="subdued cardStar">&#9733;2/5</a>
+                              <a href="#" class="subdued cardDesc">5 Reviews</a>
+                            </p>
+                            <div class="row">
+                              <button ng-click="showDetails();" class="button button-clear col col-50 footerColor padding0" style="background:#0072ff;border-right:2px solid #fff;">Details</button>
+                              <button ng-click="viewONMap();" class="button button-clear col col-50 footerColor padding0" style="background:#0072ff;border-right:5px solid #fff;">View On Map</button>
+                            
+                      </div>
+
+                      
+                </div>
+                </div>
+                <div class="list card" style="margin:5px;">
+                  
+                    <div class="item item-avatar" style="padding-left:2%;">
+                      <h2 class="cardHeading">City Palace Hotel</h2>
+                      <!--<span class="cardDesc">City Palace, Jaipur, which includes the Chandra Mahal and Mubarak Mahal palaces and other buildings, is a palace complex in Jaipur, the capital of the Rajasthan state, India.</span>-->
+                      <!--<p class="cardStar">&#9733;2/5</p>-->
+                    </div>
+                    <div class="item item-body">
+                      <img class="full-image" src="../../img/cityCard.jpg">
+                      <p>
+                        City Palace, Jaipur, which includes the Chandra Mahal and Mubarak Mahal palaces and other buildings, is a palace complex in Jaipur, the capital of the Rajasthan state, India.
+                      </p>
+                      <p>
+                        <a href="#" class="subdued cardStar">&#9733;2/5</a>
+                        <a href="#" class="subdued cardDesc">5 Reviews</a>
+                      </p>
+                      <div class="row">
+                        <button ng-click="showDetails();" class="button button-clear col col-50 footerColor padding0" style="background:#0072ff;border-right:2px solid #fff;">Details</button>
+                        <button ng-click="viewONMap();" class="button button-clear col col-50 footerColor padding0" style="background:#0072ff;border-right:5px solid #fff;">View On Map</button>
+                      
                 </div>
 
-                <div class="list card" style="margin:5px;">
+                </div>
+          </div>
+
+                <!-- <div class="list card" style="margin:5px;">
                         
                           <div class="item item-avatar" style="padding-left:2%;">
                             <h2 class="cardHeading">City Palace Hotel</h2>
@@ -73,7 +105,12 @@
                         </div>
                         
                         </div>
-    
+     -->
     
         </ion-content>
+        <div class="bar bar-footer row">
+          <button style="background:#ff0000; color:#fff; border-radius:0; border-right:2px solid #fff;"class="col col-33 button icon-left ion-ios-telephone">Dial 100</button>
+          <button style="background:#0c60ee; color:#fff;border-radius:0; border-right:4px solid #fff;" class="col col-33 button icon-left ion-navigate"> Location</button>
+          <button style="background:#94780f; color:#fff;border-radius:0;" class="col col-33 button icon-left ion-android-happy">Experience</button>
+      </div>
     </ion-view>

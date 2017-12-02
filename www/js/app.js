@@ -76,6 +76,26 @@ app.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider, $c
                     controller: 'resultListCtrl'
                 }
             }
+        })
+        .state('menuData.details', {
+            url: '/details',
+            // cache: false,
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/details.html',
+                    controller: 'detailsCtrl'
+                }
+            }
+        })
+        .state('menuData.map', {
+            url: '/map',
+            // cache: false,
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/map.html',
+                    controller: 'mapCtrl'
+                }
+            }
         });
 
     // if none of the above states are matched, use this as the fallback
