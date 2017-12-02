@@ -61,9 +61,7 @@
         margin:0 0 0 -3%;
         opacity: 0.8;
 }
-.title{
-    margin:0!important;
-}
+
 .footerColor{
     color:#fff!important;
     font-size:3.8vw!important;
@@ -78,6 +76,8 @@
     left:0!important;
     right:0!important;
     color:#fff!important;
+    background: #f74133;
+    margin:0!important;
 }
 .cardHeading{
     font-size: 6vw!important;
