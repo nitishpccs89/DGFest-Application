@@ -49,17 +49,20 @@
     background-position:center center;
     background-size:cover;
 }
-.title{
+.titleBlock{
         width: 100%;
-        background: #0a0a0a;
+        background: #000;
         display: block;
-        padding: 0;
+        padding: 3% 0;
         text-align: center;
         position: absolute;
         bottom: 0;
         color: #fff;
-        margin: 0 0 0 -3%;
+        margin:0 0 0 -3%;
         opacity: 0.8;
+}
+.title{
+    margin:0!important;
 }
 .footerColor{
     color:#fff!important;
@@ -70,4 +73,26 @@
     position:absolute;
     border:2px solid #000;
     bottom:-15%;
+}
+.title {
+    left:0!important;
+    right:0!important;
+    color:#fff!important;
+}
+.cardHeading{
+    font-size: 6vw!important;
+    color: #084a35;
+    font-weight: bold!important;
+}
+.cardStar{
+    font-size: 4vw!important;
+    color: #e42112!important;
+}
+
+.cardDesc {
+        font-size: 3.8vw!important;
+        color: #711f0c!important;
+}
+.padding0{
+    padding:0!important;
 }

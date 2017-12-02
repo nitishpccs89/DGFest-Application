@@ -43,8 +43,8 @@ app.run(function($ionicPlatform, $ionicPopup, $state, $ionicHistory, $timeout) {
 
 
 app.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider, $compileProvider) {
-    $compileProvider.imgSrcSanitizationWhitelist(/^\s*(https?|ftp|file|chrome-extension|x-wmapp.?):|data:image\//); //for images
-    $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|ghttps?|ms-appx|x-wmapp0):/); //for href field
+    //$compileProvider.imgSrcSanitizationWhitelist(/^\s*(https?|ftp|file|chrome-extension|x-wmapp.?):|data:image\//); //for images
+    //$compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|ghttps?|ms-appx|x-wmapp0):/); //for href field
     $ionicConfigProvider.navBar.alignTitle('center');
     $ionicConfigProvider.backButton.previousTitleText(false).text('');
     // Ionic uses AngularUI Router which uses the concept of states
@@ -67,18 +67,18 @@ app.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider, $c
             controller: 'homeCtrl'
 
         })
-        .state('menuHeader.search', {
-            url: '/search',
+        .state('menuData.resultList', {
+            url: '/resultList',
             // cache: false,
             views: {
                 'menuContent': {
-                    templateUrl: 'modules/search_module/template/search.html',
-                    controller: 'searchCtrl'
+                    templateUrl: 'templates/resultList.html',
+                    controller: 'resultListCtrl'
                 }
             }
         });
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/homePage');
+    $urlRouterProvider.otherwise('/home');
 
 });
